@@ -1,0 +1,186 @@
+header {
+    z-index: 1000; /* Mantém acima de outros elementos */
+    position: fixed; /* Mantém fixo no topo ao rolar */
+    width: 100vw; /* Ocupa 100% da largura da tela */
+    font-size: 1.5vh;
+    text-align: center;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    color: #fff;
+    padding: 10px;
+    background-color: #ff0000; /* Cor de fundo para destacar */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.751);
+    top: 0;
+    left: 0;
+}
+
+footer {
+    width: 58vw; /* Ocupa 100% da largura do contêiner pai */
+    font-size: 1.5vh;
+    text-align: left; /* Alinha o texto à esquerda */
+    font-family: 'Arial Narrow Bold', sans-serif;
+    color: #fff;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.751);
+    display: flex; /* Usa Flexbox para alinhar itens */
+    justify-content: center; /* Alinha os itens à esquerda */
+    align-items: center; /* Centraliza os itens verticalmente */
+    height: auto; /* Ajusta a altura automaticamente */
+    min-height: 50px; /* Define uma altura mínima */
+    margin: 0; /* Remove qualquer margem */
+    left: 0; /* Garante que o footer comece do lado esquerdo */
+    right: 0; /* Garante que o footer termine do lado direito */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
+}
+
+header h1 {
+    font-size: 2.5vh; /* Deixa a fonte do texto de acordo com o tamanho da tela */
+    width: 99vw;
+    text-shadow: 1px 0px 4px rgb(0, 0, 0); /* Adiciona sombra ao texto */
+    background-color: #dfbe00; /* Cor de fundo com transparência */
+    border-radius: 0px; /* Arredonda os cantos */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.751); /* Adiciona sombra ao elemento */
+}
+
+header h2 {
+    height: 0.2vh; /* Altura do cabeçalho */
+    width: 150vw; /* Ocupa 100% da largura da tela */
+    font-family: 'Pacifico', cursive; /* Define a fonte para o subcabeçalho */
+    font-size: 3.5vh; /* Tamanho da fonte */
+    text-shadow: 1px 0px 4px rgb(0, 0, 0); /* Adiciona sombra ao texto */
+    text-align: left; /* Alinha o texto à esquerda */
+    padding-left: 3px; /* Espaçamento interno à esquerda */
+    background-color: #ff0000e3; /* Cor de fundo com transparência */
+    max-width: 1200px; /* Largura fixa */
+    margin-top: -8px; /* Desloca o texto para cima */
+    position: relative; /* Permite o uso de top */
+    top: -4px; /* Desloca o texto para cima */
+}
+
+.logo {
+    height: 13vh; /* Altura do cabeçalho */
+    width: 13vw; /* Largura do cabeçalho */
+    margin-left: 10px; /* Espaçamento à esquerda */
+    margin-right: 10px; /* Espaçamento à direita */
+    margin-top: 10px; /* Espaçamento superior */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    border-radius: 0px; /* Arredonda os cantos */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.751); /* Adiciona sombra ao elemento */
+}
+
+body {
+    flex: 1; /* Ocupa o restante do espaço */
+    padding-top: 60px;
+    padding-left: 350px; /* Espaçamento interno à esquerda */
+    overflow-y: auto; /* Permite rolagem vertical */
+    box-sizing: border-box; /* Inclui padding no cálculo do tamanho */
+    background-image: url("./imagens/fundo,icones-e-logo/fundo-engrenagem.jpg"); /* Imagem de fundo */
+    background-attachment: fixed; /* Fixa a imagem durante a rolagem */
+    background-size: cover; /* Cobre todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+}
+
+.icone {
+    filter: contrast(300%); /* Aumenta o contraste da imagem */
+    height: 60px; /* Altura do ícone */
+    width: 60px; /* Largura do ícone */
+    display: flex; /* Usa flexbox para alinhar conteúdo */
+    flex-direction: column; /* Alinha itens verticalmente */
+    align-items: center; /* Centraliza itens horizontalmente */
+    text-decoration: none; /* Remove sublinhado de links */
+    color: white; /* Cor do texto */
+    margin-top: 5px; /* Margem superior */
+    text-align: center; /* Centraliza o texto */
+    padding-left: 41px; /* Espaçamento interno à esquerda */
+}
+
+.icone:hover {
+    transform: translateY(-8px); /* Move o elemento para cima */
+}
+
+.grid-conteiner {
+    display: grid; /* Define um contêiner de grade */
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); /* Colunas responsivas */
+    gap: 10px; /* Espaçamento entre os itens */
+    padding: 0px; /* Espaçamento interno */
+    max-width: 900px; /* Largura máxima */
+    margin: center; /* Centraliza o contêiner */
+}
+
+.imagem {
+    height: 18vh; /* Altura da imagem */
+    width: 100%; /* Largura da imagem */
+    object-fit: cover; /* Cobre o contêiner sem distorção */
+    padding-top: 1px; /* Espaçamento superior */
+    padding-right: 0px; /* Espaçamento à direita */
+    padding-bottom: 0px; /* Espaçamento inferior */
+    border-radius: 0px; /* Arredonda os cantos */
+}
+
+.quadrado {
+    background: #000455; /* Cor de fundo com transparência */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Espaçamento interno */
+    height: 29vh; /* Altura: 40% da altura da janela */
+    width: 25vw; /* Largura: 40% da largura da janela */
+    max-height: 200px; /* Altura máxima pra não ficar gigante */
+    max-width: 200px; /* Largura máxima */
+    min-height: 150px; /* Altura mínima pra não ficar muito pequeno */
+    min-width: 150px; /* Largura mínima */
+    overflow: hidden; /* Esconde conteúdo que ultrapassa */
+    transition: all 250ms ease-in-out; /* Transição suave */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Sombreamento */
+}
+
+@media (max-width: 600px) {
+    .quadrado {
+        width: 80vw; /* Ocupa mais espaço em telas pequenas */
+        height: 50vh;
+    }
+}
+
+.nome, .preco {
+    text-align: center; /* Centraliza o texto */
+    font-size: 1.5vh; /* Tamanho da fonte */
+    padding: 5px; /* Espaçamento interno */
+    background-color: #00000075; /* Cor de fundo com transparência */
+    border-radius: 0px; /* Arredonda os cantos */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.751); /* Adiciona sombra ao elemento */
+}
+
+.quadrado:hover {
+    transform: translateY(-8px);
+    box-shadow: 10px 10px rgb(195, 159, 0);
+}
+
+.barra-anuncio {
+    position: center; /* Centraliza o container */
+    width: 900px; /* Largura do container */
+    height: 100px; /* Altura do container */
+    overflow: hidden; /* Impede que a imagem saia da área */
+}
+
+.barra-anuncio img {
+    width: 100%; /* Faz com que a imagem ocupe toda a largura do container */
+    height: 100%; /* Faz com que a imagem ocupe toda a altura do container */
+    object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+}
+
+.header-icon {
+    height: 40px; /* Ajuste a altura conforme necessário */
+    width: auto; /* Mantém a proporção da imagem */
+    margin-right: 10px; /* Espaçamento à direita do ícone */
+    vertical-align: middle; /* Alinha verticalmente com o texto */
+}
+
+.motor {
+    position: absolute; /* Permite posicionamento independente */;
+    top: 0px; /* Ajuste conforme necessário */
+    padding-left: 635px; /* Ajuste conforme necessário */
+    height: 11.2vh; /* Ajuste conforme necessário */
+    width: 8vw; /* Mantém a proporção da imagem */
+    z-index: 1000; /* Garante que o ícone fique acima de outros elementos */
+}
+
+

@@ -1,0 +1,11 @@
+{
+    "configurations": [
+    {
+        "name": "Launch",
+        "port": 4000,
+        "request": "attach",
+        "type": "chrome",
+        "webRoot": "${workspaceFolder}"
+    }
+    ]
+}
