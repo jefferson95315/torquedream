@@ -153,7 +153,7 @@ body {
 .barra-anuncio {
     position: center; /* Centraliza o contêiner */
     width: 900px; /* Largura do container */
-    height: 140px; /* Altura do container */
+    height: 160px; /* Altura do container */
     overflow: hidden; /* Impede que a imagem ultrapasse a área */
 }
 
